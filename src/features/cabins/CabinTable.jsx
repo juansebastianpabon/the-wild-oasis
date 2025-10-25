@@ -5,7 +5,6 @@ import Spinner from "../../ui/Spinner";
 import CabinRow from "./CabinRow";
 const Table = styled.div`
   border: 1px solid var(--color-grey-200);
-
   font-size: 1.4rem;
   background-color: var(--color-grey-0);
   border-radius: 7px;
@@ -35,11 +34,12 @@ function CabinTable() {
   } = useQuery({
     queryKey: ["cabins"],
     queryFn: getCabins,
+    staleTime: 0,
   });
 
   if (isPending) return <Spinner />;
   return (
-    <Table role='table'>
+    <Table rol='table'>
       <TableHeader role='row'>
         <div>Image</div>
         <div>Cabin</div>
