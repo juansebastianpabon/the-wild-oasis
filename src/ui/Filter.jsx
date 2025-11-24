@@ -40,6 +40,7 @@ function Filter({ filterField, options }) {
   const currentFilter = searchParams.get(filterField) || options.at(0).value;
   function handleFilterClick(value) {
     searchParams.set(filterField, value);
+    searchParams.delete('page'); //Reset to first page on filter change
     setSearchParams(searchParams);
   }
 

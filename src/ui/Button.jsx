@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components';
 
 const sizes = {
   small: css`
@@ -53,8 +53,8 @@ const Button = styled.button`
   border-radius: var(--border-radius-sm);
   box-shadow: var(--shadow-sm);
 
-  ${({ size = "medium" }) => sizes[size]}
-  ${({ variation = "primary" }) => variations[variation]}
+  ${({ size = 'medium' }) => sizes[size]}
+  ${({ variation = 'primary' }) => variations[variation]}
 `;
 
 /* Button.defaultProps = {
