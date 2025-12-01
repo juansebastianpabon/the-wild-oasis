@@ -17,7 +17,6 @@ import { max } from 'date-fns';
 import { Toaster } from 'react-hot-toast';
 import Checkin from './pages/Checkin';
 import ProtectedRoute from './ui/ProtectedRoute';
-import { AuthSync } from './features/authentication/AuthSync';
 
 const queryClient = new QueryClient({
   //Default settings for queries
@@ -35,7 +34,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <ReactQueryDevtools initialIsOpen={false} />
       <GlobalStyles />
-      <AuthSync />
+
       <BrowserRouter>
         <Routes>
           <Route
