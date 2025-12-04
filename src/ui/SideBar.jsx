@@ -17,7 +17,7 @@ function SideBar() {
     <SideBarStyled>
       <Logo />
       <MainNav />
-      <UpLoader />
+      {/*    <UpLoader /> */}
     </SideBarStyled>
   );
 }
